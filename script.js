@@ -1,7 +1,14 @@
 const divContainer = document.querySelector('.grid-container');
-for (i = 0; i < 256; i++) {
+gridSize = 16 * 16;
+for (i = 0; i < gridSize; i++) {
   const div = document.createElement('div');
   div.classList.add('grid-item');
-  console.log(div);
   divContainer.appendChild(div);
 }
+document
+  .querySelectorAll('.grid-item')
+  .forEach((elem) =>
+    elem.addEventListener('mouseover', () =>
+      elem.classList.add('hover')
+    )
+  );
