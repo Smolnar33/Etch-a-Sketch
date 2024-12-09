@@ -6,7 +6,7 @@
     border: 2px solid #000;
   }
 
-  .grid-item {
+.grid-item {
     flex: 0 0 calc(100% / 16); 
     height: calc(100% / 16);   
     border: 2px solid #020202;    
@@ -20,4 +20,8 @@ body {
     min-height: 100vh;
     margin: 0;
     background-color: #f4f4f4;
+  }
+
+.grid-item:hover {
+    background-color: #f0a; /* Change background color on hover */
   }
