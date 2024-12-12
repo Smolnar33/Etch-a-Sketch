@@ -13,15 +13,22 @@
     box-sizing: border-box;   
   }
 
-body {
+  body {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
-    flex-direction: column; 
     margin: 0;
-    height: 100vh; 
+    height: 100vh;
   }
 
 .hover {
     background-color: #f0a; 
+  }
+
+  button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
   }
